@@ -1,0 +1,29 @@
+mixin header()
+    section.header&attributes(attributes)
+        img.header__logo(src="assets/img/logo.svg" alt="logo")
+        ul.header__menu
+            li.header__item
+                a.header__link(href="index.html") HOME
+            li.header__item
+                a.header__link(href="#") EXCHANGE DATA
+            li.header__item
+                a.header__link(href="#") API
+            li.header__item
+                a.header__link(href="#") PAY
+            li.header__item
+                a.header__link(href="#") ABOUT US
+        button.hamburger &#9776;
+        button.cross &#735;
+        .menu
+            ul.menu__block
+                li.menu__item
+                    a.menu__link(href="#") HOME
+                li.menu__item
+                    a.menu__link(href="#") EXCHANGE DATA
+                li.menu__item
+                    a.menu__link(href="#") API
+                li.menu__item
+                    a.menu__link(href="#") PAY
+                li.menu__item
+                    a.menu__link(href="#") ABOUT US
+

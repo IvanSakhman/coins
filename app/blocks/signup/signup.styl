@@ -1,0 +1,46 @@
+.signup
+  background-size cover
+  background url("../img/background.png") repeat
+  min-height calc(100vh - 66px)
+  background-size 100px
+  position relative
+  padding-top 85px
+  &__form
+    position relative
+  &__fields
+    padding-bottom 50px
+  &__checkbox
+    position absolute
+    bottom -40px
+    color #fff
+    left 30px
+    font-size 18px
+    text-decoration none
+  &__accept
+    margin-right 10px
+    height 16px
+  &__forgot
+    text-align right
+    margin-right 30px
+
+@media screen and (max-width: 1023px)
+  .signup
+    min-height calc(100vh - 45px)
+    padding-top 60px
+
+@media screen and (max-width: 600px)
+  .signup
+    min-height calc(100vh - 45px)
+    padding-top 60px
+    &__block
+      margin 30px auto 0
+      width 80%
+    &__checkbox
+      left 50%
+      transform translateX(-50%)
+      width 129px
+    &__accept
+      height 13px
+    &__forgot
+      text-align center
+      margin 65px 0 0

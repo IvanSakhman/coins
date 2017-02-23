@@ -1,0 +1,20 @@
+mixin signup()
+    section.signup&attributes(attributes)
+        .login__block
+            img.login__brand(src="assets/img/brand.svg" alt="brand")
+            .login__line
+            form.login__form.signup__form
+                .login__title
+                    a(href="login.html").login__name.login__name_login Login /
+                    a(href="#").login__name.login__name_sign.login__name_active Sign up
+                .login__layout
+                    .login__fields.signup__fields
+                        input(type="text" placeholder="Email/Mobile" required).login__input
+                        input(type="password" placeholder="Password" required).login__input
+                        input(type="password" placeholder="Confirm Password" required).login__input
+                        input(type="text" placeholder="Mobile" required).login__input
+                        label.signup__checkbox
+                            input(type="checkbox" name="accept" value="accept" required).signup__accept
+                            | Accept terms
+                input(type="submit" value="Get Started").login__submit
+            a(href="#").login__forgot.signup__forgot Forgot Password?

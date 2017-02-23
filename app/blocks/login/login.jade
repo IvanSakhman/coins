@@ -1,0 +1,18 @@
+mixin login()
+    section.login&attributes(attributes)
+        .login__block
+            img.login__brand(src="assets/img/brand.svg" alt="brand")
+            .login__line
+            form.login__form
+                .login__title
+                    a(href="#").login__name.login__name_login.login__name_active Login /
+                    a(href="signup.html").login__name.login__name_sign Sign up
+                .login__layout
+                    .login__fields
+                        input(type="text" placeholder="Email/Mobile").login__input
+                        input(type="password" placeholder="Password").login__input
+                        input(type="text" placeholder="Login Token").login__input
+                    p.login__text.
+                        Please enter the token sent to your email or click the link to continue
+                input(type="submit" value="Get Started").login__submit
+            a(href="#").login__forgot Forgot Password?
