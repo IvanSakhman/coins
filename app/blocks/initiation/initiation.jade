@@ -1,0 +1,63 @@
+mixin initiation()
+    section.initiation&attributes(attributes)
+        .initiation__block
+            h2.initiation__title Account Initiation
+            .initiation__line
+            .initiation__complete
+                img.initiation__checkIcon(src="assets/img/checkIcon.png" alt="checkIcon")
+                h2.initiation__incomplete Incomplete!
+            .initiation__section
+                .initiation__kyc
+                    p.initiation__subTitle KYC & Bank Link
+                form.initiation__form
+                    select.initiation__personal
+                        option Personal
+                        option Personal
+                        option Personal
+                        option Personal
+                    .initiation__box
+                        input(type="text" placeholder="PAN Card Number. Eg. ABCDE1234a").initiation__input
+                    input(type="file" name="initiation__file" id="initiation__file").initiation__inputFile
+                    label(for="initiation__file") Select a file
+                    .initiation__container
+                        p.initiation__text.
+                            Please do not upload your Pen Card image. Upload an image or PDF of yout ID + Address proof.
+                        p.initiation__text.
+                            Example: Aadhar Card, Passport od Driving Licence.
+                        p.initiation__text.
+                            This should not be the scan of a copy. Accepted Formats: jpg / png / pdf.
+                        p.initiation__text
+                            b Additional Documents:
+                            | Any additional Documents can be added to a zip file under %MB and upload above.
+                    .initiation__line
+                    .initiation__userInfo
+                        .initiation__fields
+                            input(type="text" placeholder="Email/Mobile").initiation__input
+                            input(type="password" placeholder="Password").initiation__input
+                            input(type="text" placeholder="Login Token").initiation__input
+                            input(type="text" placeholder="IFSC Code").initiation__input
+                    .initiation__savings
+                        select.initiation__account
+                            option Savings Account
+                            option test
+                            option test
+                            option test
+                        .initiation__box
+                            input(type="text" placeholder="Phone Number").initiation__input
+                    .initiation__container
+                        p.initiation__text.
+                            Phone number associated with the Bank Account.
+                        p.initiation__text.
+                            Here to see acceptable Number Formats.
+                    input(type="submit" value="SEND NEW SMS CODE").initiation__submit
+                    .initiation__mail
+                        input(type="text" placeholder="Message to Banking Officer (Optional)").initiation__message
+        .contact.contact__initiation
+            h3.contact__us Contact Us
+            p.contact__text Yourcoin Traders
+            p.contact__text 56, Jadeja Nagar
+            p.contact__text Nr Marketing Yard
+            p.contact__text Halol - 389350
+            p.contact__text Gujarat
+            p.contact__text Ph: 8460736567
+            p.contact__text Service Tax Registration: ARCPD9422CSD001
