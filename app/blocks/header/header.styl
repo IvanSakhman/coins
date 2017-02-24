@@ -7,6 +7,24 @@
   &__logo
     width 197px
     margin 18px 0 0 15.4%
+  &__info
+    display inline-block
+    float right
+    margin 34px 10px 0 0
+    text-transform uppercase
+  &__price
+    font-size 14px
+    font-weight 600
+    opacity 0.69
+    color #fff
+    display inline-block
+    margin-right 10px
+  &__cost
+    font-size 14px
+    font-weight 600
+    opacity 0.69
+    display inline-block
+    color #ec4824
   &__menu
     float right
     margin 23px 14.5% 0 0
@@ -56,9 +74,12 @@
     &__logo
       width 150px
       margin-top 12px
+    &__info
+      position absolute
+      right 12%
+      margin-top 21px
     &__menu
       display none
-
   .hamburger
     display block
     float right
@@ -97,3 +118,8 @@
         color #ec4824
         border 2px solid #ec4824
 
+@media screen and (max-width: 425px)
+  .header
+    &__logo
+      width 110px
+      margin-top 15px
