@@ -1,7 +1,7 @@
 .content
   background-size cover
   background url("../img/background.png") repeat
-  height calc(100vh - 66px)
+  height calc(100vh - 93px)
   background-size 100px
   position relative
   padding-top 85px
@@ -51,22 +51,6 @@
       color #ec4824
       border 2px solid #ec4824
 
-.contact
-  position absolute
-  bottom 40px
-  right 50px
-  background transparent
-  color #fff
-  font-family Raleway
-  &__us
-    font-size 20px
-    color #ec4824
-    font-weight 600
-    margin-bottom 10px
-  &__text
-    margin-bottom 5px
-    font-size 18px
-
 @media screen and (max-width: 1280px)
   .content
     &__block
@@ -89,10 +73,12 @@
 
 @media screen and (max-width: 1023px)
   .content
-    min-height 750px
+    min-height calc(100vh - 200px)
+    height auto
+    padding-top 60px
     &__block
       width 80%
-      top 10%
+      top 12%
       transform none
     &__brand
       width 310px
@@ -120,6 +106,7 @@
     &__text
       font-size 14px
       line-height 20px
+
 @media screen and (max-width: 425px)
   .content
     &__brand
@@ -139,3 +126,5 @@
       width 150px
       text-align center
       margin-bottom 20px
+  .contact
+    width 250px
